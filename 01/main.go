@@ -51,7 +51,8 @@ func convertStrToNum(nums string) string {
 }
 
 func main() {
-	d, err := os.ReadFile("input.txt")
+	pwd, _ := os.Getwd()
+	d, err := os.ReadFile(pwd + "/01/input.txt")
 	if err != nil {
 		panic(err)
 	}
